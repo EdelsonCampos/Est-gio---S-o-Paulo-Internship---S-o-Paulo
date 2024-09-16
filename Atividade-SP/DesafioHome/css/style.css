@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212; /* Fundo preto não muito escuro */
+  color: #ffffff; /* Texto branco */
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #1e1e1e; /* Fundo da área principal */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  border-top: 1px solid #ffffff;
+  padding-top: 1rem;
+  color: #e0e0e0; /* Cor do título */
+}
+
+h2, ul, ol {
+  color: #e0e0e0; /* Cor dos subtítulos e listas */
+  margin: 1rem 0;
+  list-style: none;
+}
+
+#question1, #solution {
+  background: #333; /* Fundo dos blocos */
+  border: 1px solid #444; /* Cor da borda dos blocos */
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+#solution {
+  background: #6200ea; /* Fundo do bloco de solução roxo */
+  color: #ffffff; /* Texto branco no bloco de solução */
+}
+
+#question1 span {
+  color: #ff4081; /* Cor do texto dentro do bloco de pergunta */
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #1e1e1e;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #6200ea; /* Cor do botão roxo */
+  color: #ffffff; /* Texto branco no botão */
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto;
+}
+
+button:hover {
+  background: #3700b3; /* Cor do botão roxo mais escuro ao passar o mouse */
+}

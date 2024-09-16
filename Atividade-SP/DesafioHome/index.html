@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Teste Desenvolvedor - Target Sistemas</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Questão 1 -->
+        <section id="question1-section">
+            <h1>Questão 1 de 5</h1>
+            <p>Observe o trecho de código abaixo e determine o valor da variável <strong>SOMA</strong> ao final do processamento:</p>
+            <div id="question1">
+                <code>
+                    int INDICE = 13, SOMA = 0, K = 0;<br>
+                    enquanto K &lt; INDICE faça {<br>
+                    &nbsp;&nbsp;K = K + 1;<br>
+                    &nbsp;&nbsp;SOMA = SOMA + K;<br>
+                    }<br>
+                    imprimir(SOMA);
+                </code>
+            </div>
+            <p>Ao final do processamento, qual será o valor da variável SOMA?</p>
+
+            <h2>Solução da Questão</h2>
+            <div class="solution">
+                <p>Resultado: <span id="sumResult"></span></p>
+            </div>
+        </section>
+
+        <!-- Questão 2 -->
+        <section id="question2-section">
+            <h1>Questão 2 de 5</h1>
+            <p>Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor é sempre a soma dos dois valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa que, dado um número, verifique se ele pertence ou não à sequência de Fibonacci.</p>
+            <p><strong>IMPORTANTE:</strong> O número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código.</p>
+
+            <h2>Solução da Questão</h2>
+            <div class="solution">
+                <label for="number-input">Digite um número e veja se ele faz parte da sequência de Fibonacci:</label>
+                <input type="number" id="number-input" placeholder="Digite um número">
+                <button id="check-button">Confirmar</button>
+                <span id="result"></span>
+            </div>
+        </section>
+
+        <!-- Questão 3 -->
+        <section id="question3-section">
+            <h1>Questão 3 de 5</h1>
+            <p>Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa que calcule e retorne:</p>
+            <ul>
+                <li>O menor valor de faturamento ocorrido em um dia do mês;</li>
+                <li>O maior valor de faturamento ocorrido em um dia do mês;</li>
+                <li>O número de dias no mês em que o valor de faturamento diário foi superior à média mensal.</li>
+            </ul>
+            <p><strong>IMPORTANTE:</strong></p>
+            <ol>
+                <li>Usar JSON ou XML disponível como fonte dos dados do faturamento mensal;</li>
+                <li>Ignorar dias sem faturamento (finais de semana e feriados) no cálculo da média.</li>
+            </ol>
+
+            <h2>Solução da Questão</h2>
+            <div class="solution">
+                <p id="total">Total vendido: R$ <span></span></p>
+                <p id="dayMost">O maior valor de faturamento: R$ <span></span></p>
+                <p id="dayLeast">Menor valor de faturamento: R$ <span></span></p>
+                <p id="monthlyAvg">Número de dias no mês em que o valor de faturamento diário foi superior à média mensal: <span></span></p>
+            </div>
+        </section>
+
+        <!-- Questão 4 -->
+        <section id="question4-section">
+            <h1>Questão 4 de 5</h1>
+            <p>Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:</p>
+            <ul>
+                <li>SP - R$67.836,43</li>
+                <li>RJ - R$36.678,66</li>
+                <li>MG - R$29.229,88</li>
+                <li>ES - R$27.165,48</li>
+                <li>Outros - R$19.849,53</li>
+            </ul>
+            <p>Escreva um programa que calcule o percentual de representação de cada estado dentro do valor total mensal da distribuidora.</p>
+
+            <h2>Solução da Questão</h2>
+            <div class="solution">
+                <ul id="resultShare">
+                    <li>SP: %</li>
+                    <li>RJ: %</li>
+                    <li>MG: %</li>
+                    <li>ES: %</li>
+                    <li>Outros: %</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Questão 5 -->
+        <section id="question5-section">
+            <h1>Questão 5 de 5</h1>
+            <p>Escreva um programa que inverta os caracteres de uma string. A string pode ser informada através de qualquer entrada ou previamente definida no código. Evite usar funções prontas, como o método <code>reverse()</code>.</p>
+
+            <h2>Solução da Questão</h2>
+            <div class="solution">
+                <label for="wordInput">Digite uma palavra:</label>
+                <input type="text" id="wordInput" placeholder="Digite uma palavra">
+                <button id="reverseButton">Inverter</button>
+                <span id="resultReverse"></span>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
